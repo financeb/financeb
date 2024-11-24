@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Bank - Transaction</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="transaction-form">
+    <h1>Transaction</h1>
+    <form id="transactionForm">
+      <label for="bankName">Bank Name:</label>
+      <input type="text" id="bankName" placeholder="Enter Bank Name" required>
+      <label for="accountNumber">Account Number:</label>
+      <input type="text" id="accountNumber" placeholder="Enter Account Number" required>
+      <button type="submit">Proceed</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById('transactionForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      window.location.href = 'auth.html';
+    });
+  </script>
+</body>
+</html>
